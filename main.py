@@ -80,10 +80,10 @@ if __name__ == '__main__':
             password = input("请输入你的密码，按回车确认\n密码:")
         account = Account(username, password)
         # 设置题库
-        tiku = Tiku()
-        tiku.config_set(tiku_config)    # 载入配置
-        tiku = tiku.get_tiku_from_config()  # 载入题库
-        tiku.init_tiku()    # 初始化题库
+      #  tiku = Tiku()
+      #  tiku.config_set(tiku_config)    # 载入配置
+      #  tiku = tiku.get_tiku_from_config()  # 载入题库
+      #  tiku.init_tiku()    # 初始化题库
         # 实例化超星API
         chaoxing = Chaoxing(account=account,tiku=tiku)
         # 检查当前登录状态，并检查账号密码
